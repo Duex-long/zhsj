@@ -1,8 +1,22 @@
 <template>
   <div id="app">
-    <router-view/>
+    <Layout>
+      <!-- <router-view/> -->
+    </Layout>
   </div>
 </template>
+
+<script>
+import Layout from '@/layout/Layout.vue'
+console.log(Layout,'Layout')
+export default ({
+  name: 'APP',
+  components: {
+    Layout
+  }
+})
+
+</script>
 
 <style>
 #app {
@@ -11,6 +25,10 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  /* height: 100vh; */
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 nav {

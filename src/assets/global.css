@@ -1,4 +1,28 @@
+body {
+  margin: 0;
+}
 .full-page {
     height: 100%;
     width: 100%;
+}
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+.limit-width{
+  max-width: 1440px;
+}
+
+.base-select {
+  cursor: pointer;
+  border:2px solid transparent;
+
+}
+.base-select:link,.base-select:active {
+  background-color: #ccc;
+  border-color: #0F62Fe;
+
+}
+.base-select:hover {
+  background-color: #ccc;
 }
