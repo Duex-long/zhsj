@@ -1,17 +1,20 @@
 <template>
     <div class="layout full-page">
-    
+        <Header/>
+        <slot></slot>
+        <Footer/>
     </div>
   </template>
   
   <script>
-  // @ is an alias to /src
-  import HelloWorld from '@/components/HelloWorld.vue'
+  import Header from '@/layout/Header.vue'
+  import Footer from '@/layout/Footer.vue'
   
   export default {
-    name: 'HomeView',
+    name: 'official-layout',
     components: {
-      HelloWorld
+        Header,
+        Footer
     }
   }
   </script>
